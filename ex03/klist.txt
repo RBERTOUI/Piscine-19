@@ -1,0 +1,2 @@
+  Issued                Expires             Flags    Principal
+Feb  3 15:01:15 2020  Feb  4 01:01:01 2020  FPIA   krbtgt/S19.BE@S19.BE
