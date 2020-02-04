@@ -1,0 +1,5 @@
+Credentials cache: API:68135395-CCE6-41E6-B9B3-9C91FB3882D6
+        Principal: rbertoui@S19.BE
+
+  Issued                Expires               Principal
+Feb  4 11:30:43 2020  Feb  4 21:30:43 2020  krbtgt/S19.BE@S19.BE
