@@ -1,1 +1,1 @@
-find . \( -type d -or -type f \) | wc -l | cat -e | tr -d " "
+find . | wc -l | bc

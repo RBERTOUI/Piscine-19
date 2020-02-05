@@ -1,1 +1,1 @@
-groups $FT_USER | tr " " "," | cat -e
+groups $FT_USER | sed 's/ /,/g' | tr -d '\n'
