@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbertoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/06 11:35:02 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/02/06 11:44:02 by rbertoui         ###   ########.fr       */
+/*   Created: 2020/02/06 13:32:39 by rbertoui          #+#    #+#             */
+/*   Updated: 2020/02/06 13:57:57 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_is_negative(int n)
 {
-	char a;
+	char c;
+	char d;
 
-	a = 'a';
-	while (a <= 'z')
+	c = 'P';
+	d = 'N';
+	if (n >= 0)
 	{
-		write(1, &a, 1);
-		a++;
+		write(1, &c, 1);
+	}
+	if (n < 0)
+	{
+		write(1, &d, 1);
 	}
 }
