@@ -6,7 +6,7 @@
 /*   By: rbertoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 19:35:18 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/02/09 20:43:06 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/02/10 19:30:47 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ char	*ft_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\n';
+	dest[i] = '\0';
 	return (dest);
 }
