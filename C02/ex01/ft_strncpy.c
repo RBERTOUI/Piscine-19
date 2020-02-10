@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strcpy(char *dest, char *src, unsigned int n)
+#include <stdio.h>
+
+char    *ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
    	i = 0;
