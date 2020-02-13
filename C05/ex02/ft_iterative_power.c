@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbertoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/09 17:24:30 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/02/13 16:41:36 by rbertoui         ###   ########.fr       */
+/*   Created: 2020/02/13 11:38:13 by rbertoui          #+#    #+#             */
+/*   Updated: 2020/02/13 12:19:11 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
+int	ft_iterative_power(int nb, int power)
 {
-	int i;
+	int nbr;
 
-	i = 0;
-	while (str[i] != 0)
+	nbr = nb;
+	if (power < 0)
+		return (0);
+	if (power == 0)
+		return (1);
+	while (power > 1)
 	{
-		i++;
+		nb *= nbr;
+		power--;
 	}
-	return (i);
+	return (nb);
 }

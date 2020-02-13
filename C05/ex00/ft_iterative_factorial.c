@@ -6,7 +6,7 @@
 /*   By: rbertoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/12 19:07:57 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/02/12 20:11:42 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/02/13 19:49:16 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	ft_iterative_factorial(int nb)
 	{
 		return (0);
 	}
+	if (nb == 0)
+		return (1);
 	while (i < nbr)
 	{
 		nb *= i;
