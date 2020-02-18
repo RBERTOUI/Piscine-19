@@ -1,38 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_params.c                                  :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbertoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/13 18:37:06 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/02/14 14:21:56 by rbertoui         ###   ########.fr       */
+/*   Created: 2020/02/18 12:07:13 by rbertoui          #+#    #+#             */
+/*   Updated: 2020/02/18 12:33:11 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdlib.h>
 
-void	ft_putchar(char c)
+char *ft_strdup(char *src)
 {
-	write(1, &c, 1);
-}
+	char *ptr;
+	int strlen;
 
-int		main(int argc, char **argv)
-{
-	int i;
-	int j;
-
-	(void)argc;
-	i = 1;
-	while (argv[i])
+	strlen = 0;
+	while (src[strlen])
+		strlen++;
+	ptr = malloc((strlen + 1) * sizeof(char));
+	strlen = 0;
+	while (src[strlen])
 	{
-		j = 0;
-		while (argv[i][j] != '\0')
-		{
-			ft_putchar(argv[i][j]);
-			j++;
-		}
-		ft_putchar('\n');
-		i++;
+		ptr[strlen] = src[strlen];
+		strlen++;
 	}
+	ptr[strlen] = '\0';
+	return (ptr);
 }
