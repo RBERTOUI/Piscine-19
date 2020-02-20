@@ -6,16 +6,16 @@
 /*   By: rbertoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 12:07:13 by rbertoui          #+#    #+#             */
-/*   Updated: 2020/02/18 12:33:11 by rbertoui         ###   ########.fr       */
+/*   Updated: 2020/02/19 18:49:38 by rbertoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char *ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
-	char *ptr;
-	int strlen;
+	char	*ptr;
+	int		strlen;
 
 	strlen = 0;
 	while (src[strlen])
